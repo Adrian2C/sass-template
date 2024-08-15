@@ -1,1 +1,1 @@
-practica de sass
+//Template de sass
