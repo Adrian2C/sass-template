@@ -1,52 +1,52 @@
 /// organizacion de carpetas sass <br>
-
-/// sass/
+<br>
+/// sass/<br>
+/// |<br>
+/// |– base/ <br>
+/// |   |– _reset.scss       # Reset/normalize<br>
+/// |   |– _typography.scss  # Reglas tipográficas<br>
+/// |   |– _animation.scss   # Reglas para animaciones si hay muchas<br>
+/// |<br>
+/// |– components/ --> comps pequeños, widgets, slider, loader, widget,<br>
+/// |   |– _buttons.scss     # Botones<br>
+/// |   |– _carousel.scss    # Carousel<br>
+/// |   |– _cover.scss       # Cubierta<br>
+/// |   |– _dropdown.scss    # Dropdown<br>
+/// |   …                    # Etc.<br>
+/// |<br>
+/// |– layout/(o partials)  --> distribucion del sitio. estilo de las partes principales del sitio, sistema de grid, o css para forms<br>
+/// |   |– _navigation.scss  # Navegación<br>
+/// |   |– _grid.scss        # Sistema de retícula<br>
+/// |   |– _header.scss      # Encabezamiento<br>
+/// |   |– _footer.scss      # Pie de página<br>
+/// |   |– _sidebar.scss     # Barra lateral<br>
+/// |   |– _forms.scss       # Formularios<br>
+/// |   …                    # Etc.<br>
+/// |<br>
+/// |– pages/<br>
+/// |   |– _home.scss        # Estilos específicos para la página de inicio<br>
+/// |   |– _contact.scss     # Estilos específicos para cualquier pagina(contact en  este caso)<br>
+/// |   …                    # Etc.<br>
 /// |
-/// |– base/ 
-/// |   |– _reset.scss       # Reset/normalize
-/// |   |– _typography.scss  # Reglas tipográficas
-/// |   |– _animation.scss   # Reglas para animaciones si hay muchas
-/// |
-/// |– components/ --> comps pequeños, widgets, slider, loader, widget,
-/// |   |– _buttons.scss     # Botones
-/// |   |– _carousel.scss    # Carousel
-/// |   |– _cover.scss       # Cubierta
-/// |   |– _dropdown.scss    # Dropdown
-/// |   …                    # Etc.
-/// |
-/// |– layout/(o partials)  --> distribucion del sitio. estilo de las partes principales del sitio, sistema de grid, o css para forms
-/// |   |– _navigation.scss  # Navegación
-/// |   |– _grid.scss        # Sistema de retícula
-/// |   |– _header.scss      # Encabezamiento
-/// |   |– _footer.scss      # Pie de página
-/// |   |– _sidebar.scss     # Barra lateral
-/// |   |– _forms.scss       # Formularios
-/// |   …                    # Etc.
-/// |
-/// |– pages/
-/// |   |– _home.scss        # Estilos específicos para la página de inicio
-/// |   |– _contact.scss     # Estilos específicos para cualquier pagina(contact en  este caso)
-/// |   …                    # Etc.
-/// |
-/// |– themes/ puede ser usado para light/dark, etc
-/// |   |– _theme.scss       # Tema por defecto
-/// |   |– _admin.scss       # Tema del administrador
-/// |   …                    # Etc.
-/// |
-/// |– utils/ --> reune todas las herramientas y helpers. funciones, mixin, global, placeholder. solo addons, nada de codigo.
-/// |   |– _variables.scss   # Variables Sass
-/// |   |– _functions.scss   # Funciones Sass
-/// |   |– _mixins.scss      # Mixins Sass
-/// |   |– _helpers.scss     # Clases & placeholders
-/// |
-/// |– vendors/--> archivos de librerias y framworks.
-/// |   |– _bootstrap.scss   # Bootstrap
-/// |   |– _normalize.scss   # normalize
-/// |   |– _jquery-ui.scss   # jQuery UI
-/// |   …                    # Etc.
-/// |
-/// |
-/// `– main.scss             # Archivo principal de Sass
-
-
+/// |– themes/ puede ser usado para light/dark, etc<br>
+/// |   |– _theme.scss       # Tema por defecto<br>
+/// |   |– _admin.scss       # Tema del administrador<br>
+/// |   …                    # Etc.<br>
+/// |<br>
+/// |– utils/ --> reune todas las herramientas y helpers. funciones, mixin, global, placeholder. solo addons, nada de codigo.<br>
+/// |   |– _variables.scss   # Variables Sass<br>
+/// |   |– _functions.scss   # Funciones Sass<br>
+/// |   |– _mixins.scss      # Mixins Sass<br>
+/// |   |– _helpers.scss     # Clases & placeholders<br>
+/// |<br>
+/// |– vendors/--> archivos de librerias y framworks.<br>
+/// |   |– _bootstrap.scss   # Bootstrap<br>
+/// |   |– _normalize.scss   # normalize<br>
+/// |   |– _jquery-ui.scss   # jQuery UI<br>
+/// |   …                    # Etc.<br>
+/// |<br>
+/// |<br>
+/// `– main.scss             # Archivo principal de Sass<br>
+<br>
+<br>
 /// En cada carpeta se añade un archivo '_index', que reciba mediante un @forward todas las modificaciones y archivos contenidos en la carpeta, sin el '_x' de cada archivo
