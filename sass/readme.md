@@ -1,8 +1,8 @@
-/// organizacion de carpetas sass
+/// organizacion de carpetas sass <br>
 
 /// sass/
 /// |
-/// |– base/
+/// |– base/ 
 /// |   |– _reset.scss       # Reset/normalize
 /// |   |– _typography.scss  # Reglas tipográficas
 /// |   |– _animation.scss   # Reglas para animaciones si hay muchas
