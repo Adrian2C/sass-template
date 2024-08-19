@@ -4,23 +4,19 @@
 @charset "UTF-8";
 
 // 1. Vendors
-@use 'vendors/normalize';
+@use './vendors/normalize';
 
 // 2. Base stuff
-@use 'base/base';
-@use 'base/fonts';
-@use 'base/helpers';
-@use 'base/typography';
+@use './base/index';
 
 // 3. Layout-related sections
-@use 'layout/footer';
-@use 'layout/header';
+@use './partials/index';
 
 // 4. Components
-@use 'components/button';
+@use './components/index';
 
 // 5. Pages
-@use 'pages/home';
+@use './pages/index';
 
 // 6. Themes
-@use 'themes/default';
+@use './themes/index';
