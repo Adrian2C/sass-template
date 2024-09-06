@@ -7,16 +7,16 @@
 @use './vendors/normalize';
 
 // 2. Base stuff
-@use './base/index';
+@use './base/index' as *;
 
 // 3. Layout-related sections
-@use './partials/index';
+@use './partials/index' as *;
 
 // 4. Components
-@use './components/index';
+@use './components/index' as *;
 
 // 5. Pages
-@use './pages/index';
+@use './pages/index' as *;
 
 // 6. Themes
-@use './themes/index';
+@use './themes/index' as *;
