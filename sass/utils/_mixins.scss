@@ -1,20 +1,35 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
-//radius
+@use './variables' as v;
+
+//uso de border-radius
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-//box shadow, posicion x, posicion y, esfume, color
+
+//boxshadows
 @mixin box-shadow($x, $y, $blur, $color) {
   -webkit-box-shadow: $x $y $blur $color;
   -moz-box-shadow: $x $y $blur $color;
   box-shadow: $x $y $blur $color;
 }
-//nombre de propiedad, all, duracion predeterminada a modificar, tipo de movimiento
+
+//transitions
 @mixin transition($property: all, $duration: 0.3s, $timing-function: ease-in-out) {
   transition: $property $duration $timing-function;
+}
+
+//breakpoints para navbar
+@mixin navbar-height {
+  height: map-get(v.$navbar-heights, "desktop"); // Altura por defecto para desktop
+
+  @media (max-width: map-get(v.$breakpoints, "medium")) {
+    height: map-get(v.$navbar-heights, "tablet");
+  }
+
+  @media (max-width: map-get(v.$breakpoints, "small")) {
+    height: map-get(v.$navbar-heights, "mobile");
+  }
 }

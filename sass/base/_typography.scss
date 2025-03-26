@@ -1,9 +1,14 @@
-@use '../utils/index' as ut;
+@use "../utils/index" as u;
 
-/**
- * Basic typography style for copy text
- */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Sora:wght@100..800&display=swap");
+
+
+// Basic typography style for copy text
 body {
-  color: ut.$text-color;
-  font: normal 125% / 1.4 ut.$text-font-stack;
+    color: u.$text-color;
+    font: normal 125% / 1.4 u.$text-font;
+}
+h1,
+h2 {
+    font: normal 125% / 1.4 u.$sora-font;
 }
